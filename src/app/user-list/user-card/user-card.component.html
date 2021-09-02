@@ -1,0 +1,14 @@
+<div class="card">
+    <span (click)="delete(user)" style="float: right; cursor: pointer;">x</span>
+    <div class="card-header">{{user.name}}<br><span>{{user.username}}</span></div>
+    <div class="card-body">
+        <ul>
+            <li *ngIf="user.address">Adresse : {{user.address.street}} {{user.address.suite}} {{user.address.city}}</li>
+            <li *ngIf="user.company">Entreprise : {{user.company.name}}</li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-simple btn-simple-xs" href="tel:{{user.phone}}">CALL</a>
+        <a class="btn btn-simple btn-simple-xs" href="{{user.website}}">WEBSITE</a>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<a routerLink="/posts"><button class="btn">< Retour</button></a>
+
+<div *ngIf="post">
+    {{post.title}}
+
+    <h4>Commentaires :</h4>
+
+    <!-- <app-comment-card [comment]="comment" *ngFor="let comment of comments"></app-comment-card> -->
+    <div *ngFor="let comment of post.comments">
+        <hr>
+        <div>{{comment.body}}</div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+{
+  "infos": [
+    {
+      "title": "Démarrer json-server",
+      "body": "json-server --watch ./db.json"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Toto",
+      "username": "benir",
+      "email": "toto@gmail.com",
+      "phone": "0602030405",
+      "website": null,
+      "address": {
+        "street": "2 rue Hamilton",
+        "suite": null,
+        "city": "Lille",
+        "zipcode": "XX000"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Tata",
+      "username": "dcxsdir",
+      "email": "tataf@gmail.com",
+      "phone": "0605040302",
+      "website": null,
+      "address": {
+        "street": "5 rue Hegel",
+        "suite": null,
+        "city": "Douai",
+        "zipcode": "XX000"
+      },
+      "company": {
+        "name": "Google"
+      }
+    },
+    {
+      "name": "Rifi",
+      "username": "vfedsxw",
+      "email": "arifi@google.com",
+      "phone": "0606060606",
+      "website": "fvdc",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "body": "quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Toto va à la plage",
+      "body": "jghfdfvdscsx rtrgefrg ere rgtrhgser s."
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "Toto a pas dit bonjour",
+      "body": "jghf dfdvfvdscsx rtrgefrg ere rgtrhgser ssdvd d dfvf cxervcd."
+    },
+    {
+      "title": "gfdvdxs",
+      "body": "dfcsdc",
+      "user": 1,
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "id": 1,
+      "name": "id labore ex et quam laborum",
+      "email": "Eliseo@gardner.biz",
+      "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium"
+    },
+    {
+      "postId": 1,
+      "id": 2,
+      "name": "quo vero reiciendis velit similique earum",
+      "email": "Jayne_Kuhic@sydney.com",
+      "body": "est natus enim nihil est dolore omnis voluptatem numquam et omnis occaecati quod ullam at voluptatem error expedita pariatur nihil sint nostrum voluptatem reiciendis et"
+    },
+    {
+      "postId": 4,
+      "id": 3,
+      "name": "velit earum",
+      "email": "Kayne_South@malibu.com",
+      "body": "oluptatem error expedita pariatu est natus enim nihil est dolore omnis voluptatem numquam et omnis occaecati quod ullam at vostrum voluptatem reiciendis et"
+    }
+  ]
+}

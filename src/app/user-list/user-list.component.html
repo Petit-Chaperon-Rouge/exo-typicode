@@ -1,0 +1,6 @@
+<h2>Liste des utilisateurs du blog</h2>
+<button class="btn" routerLink="/users/add">New user</button>
+
+<div class="flex card-container">
+    <app-user-card [user]="user" *ngFor="let user of users"></app-user-card>
+</div>

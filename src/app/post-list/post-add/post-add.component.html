@@ -1,0 +1,19 @@
+<button routerLink="/posts">Retour</button>
+
+<hr>
+
+<form [formGroup]="postForm" (ngSubmit)="addPost()">
+    <div class="form-item">
+        <label for="user">User (id)</label>
+        <input type="number" id="user" formControlName="user" />
+    </div>
+    <div class="form-item">
+        <label for="title">Titre</label>
+        <input type="text" id="title" formControlName="title" />
+    </div>
+    <div class="form-item">
+        <label for="body">Contenu article</label>
+        <input type="text" id="body" formControlName="body" />
+    </div>
+    <button type="submit">Ajouter</button>
+</form>

@@ -1,0 +1,15 @@
+<div class="card">
+    <span (click)="delete(post)" style="float: right; cursor: pointer;">x</span>
+    <div class="card-header">{{post.title}}</div>
+    <div class="card-body">{{post.body}}</div>
+    <hr>
+    <div class="card-footer">
+        <sub *ngIf="post.comments">
+            {{post.comments[0].body}}
+            <br>
+            <span style="float: right; font-size: 0.8em;">{{post.comments[0].email}}</span>
+        </sub>
+        <!-- <app-comment-card [comment]="comment" *ngFor="let comment of comments"></app-comment-card> -->
+        <a class="btn btn-simple" routerLink="/posts/{{post.id}}">Voir plus</a>
+    </div>
+</div>

@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+.flex {
+  display: flex;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.card {
+  position: relative;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 300px;
+  padding: 20px;
+}
+
+.btn {
+  font-family: "Roboto Mono", monospace;
+  margin: 15px;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.btn-simple {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 6px 38px 6px;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.btn-simple-xs {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 6px 32px 6px;
+}
+
+.btn-simple-lg {
+  font-size: 20px;
+  padding: 13px 50px 13px;
+}
+
+.btn-simple::before {
+  content: "";
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+}
+
+.btn-simple::after {
+  content: "";
+  background-color: #dcbaff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: .3s;
+}
+
+.btn-simple:hover::after {
+  content: "";
+  background-color: #c691fc;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
